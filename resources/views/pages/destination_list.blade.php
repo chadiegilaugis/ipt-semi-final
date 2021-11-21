@@ -24,8 +24,7 @@
         </tbody>
       </table>
       <div class="container">
-          {{-- {{ $destinationList->links() }}\ --}}
-          {{ $destinationList->links('vendor.pagination.custom') }}
+          {{ $destinationList->links() }}
       </div>
 </div>
 
