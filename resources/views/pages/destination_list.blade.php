@@ -1,9 +1,9 @@
 @extends('layouts.app')
 @section('content')
 
-<div class="container mt-1">
+<div class="container mt-3">
     <table class="table border table-striped">
-        <thead class="thead-dark">
+        <thead class="bg-dark text-white">
           <tr>
             <th scope="col">Name</th>
             <th scope="col">Address</th>
@@ -23,7 +23,9 @@
             @endforeach
         </tbody>
       </table>
-
+      <div class="container">
+          {{ $destinationList->links() }}
+      </div>
 </div>
 
 
