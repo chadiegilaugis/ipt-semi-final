@@ -44,7 +44,6 @@ class DestinationController extends Controller
      */
     public function store(Request $request)
     {
-        //
 
         $destinations = new DestinationModel();
 
@@ -54,6 +53,7 @@ class DestinationController extends Controller
         $destinations->rating = $request->rating;
 
         $destinations->save();
+
 
         return redirect('create-destination')->with(['success' => 'New Destination created successfully']);
     }
