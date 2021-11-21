@@ -68,7 +68,7 @@ class DestinationController extends Controller
     {
 
 
-        $destinationList = DestinationModel::paginate(4);
+        $destinationList = DestinationModel::paginate(8);
 
         return view('pages.destination_list',['destinationList'=>$destinationList]);
 

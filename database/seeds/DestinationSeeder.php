@@ -11,6 +11,6 @@ class DestinationSeeder extends Seeder
     public function run()
     {
         //
-        factory(App\DestinationModel::class,20)->create();
+        factory(App\DestinationModel::class,100)->create();
     }
 }
